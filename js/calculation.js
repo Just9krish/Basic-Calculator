@@ -54,13 +54,16 @@ dotElement.onclick = () => {
 
 resetElement.onclick = () => {
   screenElement.value = "";
+  inputValues = [];
 };
 
 equalElement.onclick = () => {
   screenElement.value = eval(inputValues.join(""));
+  inputValues = [];
+  inputValues.push(screenElement.value);
 };
 
 deleteElement.onclick = () => {
   inputValues = inputValues.slice(0, inputValues.length - 1);
-  screenElement.value = inputValues.join("")
+  screenElement.value = inputValues.join("");
 };
