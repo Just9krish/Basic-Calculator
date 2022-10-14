@@ -3,7 +3,7 @@
   height: max-content;
 }
 
-.logo-container {
+.calc-logo-container {
   width: max-content;
   height: max-content;
   float: left;
@@ -37,36 +37,46 @@
   margin: 0;
 }
 
+.theme-toggle-container {
+  width: 70px;
+  height: 38px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  float: right;
+}
+
 .theme-toggle-text-container {
-    width: 85%;
-    height: max-content;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  width: 85%;
+  height: max-content;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .theme-toggle-text {
-    font-family: $spartan;
-    font-size: 11px;
-    font-weight: 700;
-    margin: 0;
-    color: $text-logo-output;
+  font-family: $spartan;
+  font-size: 11px;
+  font-weight: 700;
+  margin: 0;
+  color: $text-logo-output;
 }
 
 .theme-toggle-body {
-    width: 100%;
-    height: 28px;
-    border-radius: 23px;
-    background-color: $toggle-keypad-background;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  width: 100%;
+  height: 28px;
+  border-radius: 23px;
+  background-color: $toggle-keypad-background;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .theme-toggle {
-    width: 15px;
-    height: 15px;
-    border-radius: 50%;
-    position: relative;
-    transition: all .5s ease-in;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  position: relative;
+  transition: all 0.5s ease-in;
 }
