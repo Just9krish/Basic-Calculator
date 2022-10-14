@@ -45,26 +45,28 @@
 
       <div class="calc-body">
         <div class="calc-btn-container">
-          <button class="calc-key calc-primary-key">7</button>
-          <button class="calc-key calc-primary-key">8</button>
-          <button class="calc-key calc-primary-key">9</button>
-          <button class="calc-key calc-delete-key">del</button>
-          <button class="calc-key calc-primary-key">4</button>
-          <button class="calc-key calc-primary-key">5</button>
-          <button class="calc-key calc-primary-key">6</button>
-          <button class="calc-key calc-primary-key">+</button>
-          <button class="calc-key calc-primary-key">1</button>
-          <button class="calc-key calc-primary-key">2</button>
-          <button class="calc-key calc-primary-key">3</button>
-          <button class="calc-key calc-primary-key">-</button>
-          <button class="calc-key calc-primary-key">.</button>
-          <button class="calc-key calc-primary-key">0</button>
-          <button class="calc-key calc-primary-key">/</button>
-          <button class="calc-key calc-primary-key">*</button>
-          <button class="calc-key calc-reset-key">reset</button>
-          <button class="calc-key calc-equal-key">=</button>
+          <button class="calc-key calc-primary-key" data-num="7">7</button>
+          <button class="calc-key calc-primary-key" data-num="8">8</button>
+          <button class="calc-key calc-primary-key" data-num="9">9</button>
+          <button class="calc-key calc-delete-key" data-delete>del</button>
+          <button class="calc-key calc-primary-key" data-num="4">4</button>
+          <button class="calc-key calc-primary-key" data-num="5">5</button>
+          <button class="calc-key calc-primary-key" data-num="5">6</button>
+          <button class="calc-key calc-primary-key" data-plus>+</button>
+          <button class="calc-key calc-primary-key" data-num="1">1</button>
+          <button class="calc-key calc-primary-key" data-num="2">2</button>
+          <button class="calc-key calc-primary-key" data-num="3">3</button>
+          <button class="calc-key calc-primary-key" data-minus>-</button>
+          <button class="calc-key calc-primary-key" data-dot>.</button>
+          <button class="calc-key calc-primary-key" data-num="0">0</button>
+          <button class="calc-key calc-primary-key" data-devide>/</button>
+          <button class="calc-key calc-primary-key" data-multiply value="*">×</button>
+          <button class="calc-key calc-reset-key" data-reset>reset</button>
+          <button class="calc-key calc-equal-key" data-equal>=</button>
         </div>
       </div>
     </main>
+
+    <script src="./js/calculation.js"></script>
   </body>
 </html>
