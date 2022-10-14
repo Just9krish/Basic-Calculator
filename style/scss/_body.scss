@@ -1,0 +1,34 @@
+.calc-body {
+  width: 100%;
+  height: 476px;
+  background: $toggle-keypad-background;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.calc-btn-container {
+  width: 491px;
+  height: 415px;
+  background-color: transparent;
+  display: grid;
+  grid-template-columns: repeat(4, 101px);
+  grid-template-rows: repeat(5, 58px);
+  justify-content: space-between;
+  align-content: space-between;
+}
+
+.calc-key {
+  height: 58px;
+  border: none;
+  border-radius: 10px;
+  font-family: $spartan;
+  font-weight: 700;
+  text-transform: uppercase;
+  position: relative;
+
+  &:active {
+    top: 3;
+  }
+}

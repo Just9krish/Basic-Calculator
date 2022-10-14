@@ -1,0 +1,242 @@
+:root {
+  --main-background: hsl(222, 26%, 31%);
+  --toggle-keypad-background: hsl(223, 31%, 20%);
+  --screen-background: hsl(224, 36%, 15%);
+  --text-logo-output: rgb(255, 255, 255);
+  --text-primary: hsl(221, 14%, 31%);
+  --text-secondary: hsl(0, 0%, 100%);
+  --text-teritary: hsl(0, 0%, 100%);
+  --primary-key: hsl(30, 25%, 89%);
+  --primary-key-shadow: hsl(28, 16%, 65%);
+  --eq-key: hsl(6, 63%, 50%);
+  --eq-key-shadow: hsl(6, 70%, 34%);
+  --del-reset-key: hsl(225, 21%, 49%);
+  --del-reset-key-shadow: hsl(224, 28%, 35%);
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  min-height: 667px;
+  background-color: var(--main-background);
+  padding: 0;
+  margin: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.calc-container {
+  max-width: 541px;
+  min-width: 326px;
+  width: 90%;
+  height: 706px;
+  min-height: 608px;
+  background-color: var(--main-background);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.calc-hero-container {
+  width: 100%;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+}
+
+.logo-container {
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+  float: left;
+}
+
+.logo {
+  font-family: "Spartan", sans-serif;
+  font-weight: 700;
+  font-size: 32px;
+  color: var(--text-logo-output);
+  text-transform: lowercase;
+  margin: 0;
+}
+
+.theme-text-container {
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-right: 1.5rem;
+  float: right;
+}
+
+.theme {
+  font-family: "Spartan", sans-serif;
+  font-weight: 700;
+  font-size: 13px;
+  text-transform: uppercase;
+  color: var(--text-logo-output);
+  margin: 0;
+}
+
+.theme-toggle-text-container {
+  width: 85%;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.theme-toggle-text {
+  font-family: "Spartan", sans-serif;
+  font-size: 11px;
+  font-weight: 700;
+  margin: 0;
+  color: var(--text-logo-output);
+}
+
+.theme-toggle-body {
+  width: 100%;
+  height: 28px;
+  border-radius: 23px;
+  background-color: var(--toggle-keypad-background);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.theme-toggle {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  position: relative;
+  -webkit-transition: all 0.5s ease-in;
+  transition: all 0.5s ease-in;
+}
+
+.screen-container {
+  width: 100%;
+  height: 126px;
+  background: var(--screen-background);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-radius: 10px;
+  position: relative;
+}
+
+.screen {
+  max-width: 490px;
+  width: 490px;
+  height: 100%;
+  background: transparent;
+  border: none;
+  border-radius: 10px;
+  text-align: right;
+  font-family: "Spartan", sans-serif;
+  font-weight: 700;
+  font-size: 46px;
+  text-transform: uppercase;
+  color: var(--text-logo-output);
+}
+.screen:hover {
+  outline: none;
+}
+
+.screen-gaurd {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 5;
+  background: transparent;
+}
+
+.calc-body {
+  width: 100%;
+  height: 476px;
+  background: var(--toggle-keypad-background);
+  border-radius: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.calc-btn-container {
+  width: 491px;
+  height: 415px;
+  background-color: transparent;
+  display: grid;
+  grid-template-columns: repeat(4, 101px);
+  grid-template-rows: repeat(5, 58px);
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-line-pack: justify;
+      align-content: space-between;
+}
+
+.calc-key {
+  height: 58px;
+  border: none;
+  border-radius: 10px;
+  font-family: "Spartan", sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+  position: relative;
+}
+.calc-key:active {
+  top: 3;
+}
