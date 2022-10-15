@@ -15,7 +15,6 @@ numKeysElements.forEach(function (key) {
   key.addEventListener("click", (event) => {
     screenElement.value += key.textContent;
     inputValues.push(key.textContent);
-    console.log(inputValues);
   });
 });
 
@@ -27,8 +26,6 @@ function preventRepeat(key) {
     } else {
       inputValues.push(key.textContent);
     }
-
-    console.log(inputValues);
   }
 }
 

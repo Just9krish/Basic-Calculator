@@ -73,10 +73,33 @@
   align-items: center;
 }
 
+.theme-toggle-path {
+  width: 85%;
+  height: 19px;
+  background-color: transparent;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
 .theme-toggle {
   width: 15px;
   height: 15px;
   border-radius: 50%;
   position: relative;
+  background-color: $eq-key;
   transition: all 0.5s ease-in;
+}
+
+.theme-1 {
+  margin-right: auto;
+}
+
+.theme-2 {
+  margin: auto;
+}
+
+.theme-3 {
+  margin-left: auto;
 }
